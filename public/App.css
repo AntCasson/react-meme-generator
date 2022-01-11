@@ -1,0 +1,147 @@
+:root {
+  --accent-bgc: #F08080;
+  --transparent-bgc: #F8AD9D;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  position: relative;
+  font-family: "Karla", sans-serif;
+  background-color: var(--transparent-bgc);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+header {
+  background: linear-gradient( var(--accent-bgc) 5%, var(--transparent-bgc));
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: .3rem 1rem;
+}
+
+.header--image {
+  max-width: 100%;
+  max-height: 2rem;
+  margin-right: 1rem;
+}
+
+.header--title {
+  font-size: 1.25rem;
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  padding: .8em;
+  border-radius: 5px;
+  border: 1px solid #f5f1ff;
+  text-indent: 5px;
+}
+
+.form--button {
+  background-color: var(--accent-bgc);
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  padding: .6em;
+  font-size: 1.3em;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  width: 100%;
+  max-width: 37.5rem;
+  max-height: 34.375rem;
+  border-radius: 5px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+footer {
+  position: absolute;
+  background: linear-gradient( var(--transparent-bgc) 5%, var(--accent-bgc));
+  inset: auto 0 0 0;
+  padding: .5em;
+  text-align: center;
+  color: #fff;
+}
+
+footer p{
+  margin: .1em 0 .5em 0;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+footer img {
+  margin: 0;
+  max-height: 2rem;
+}
